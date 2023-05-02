@@ -14,3 +14,68 @@ int main()
         }
     }
 }
+#include "stdio.h"
+
+
+
+int main() {
+
+
+
+float student_scores[10] ;
+
+float sum = 0;
+
+float average = 0;
+
+
+
+int i;
+
+
+
+for (i = 0; i < 10; i++)
+
+{
+
+  printf("\nEnter value ");
+
+  scanf("%f", &student_scores[i]);
+
+}
+
+
+
+printf("\n\n----------------------------\n\n");
+
+
+
+
+
+for (i = 0; i < 10; i++)
+
+{
+
+  sum = sum + student_scores[i];
+
+}
+
+
+
+average = (sum / 10);
+
+
+
+printf("The sum is : %.2f \n", sum);
+
+printf("The average is : %.2f \n", average);
+
+
+
+   getchar();
+
+   getchar();
+
+   return 0;
+
+}
